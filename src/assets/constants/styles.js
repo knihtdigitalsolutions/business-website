@@ -1,7 +1,7 @@
-import { SocialLinks, QuickLinks, SocialSVGMap, YouTube, FooterStyles as ComponentStyles } from '../../components/footerparts/Links';
 const generalLightBgColor = 'bg-gradient-to-r from-cyan-200 via-gray-300 to-cyan-200';
 const generalDarkBgColor = 'dark:bg-gradient-to-r dark:from-cyan-900 dark:via-gray-900 dark:to-cyan-900';
 const generalBgColor = `${generalLightBgColor} ${generalDarkBgColor}`;
+const paragraphText = "text-sm sm:text-base text-gray-800 dark:text-gray-300"
 export { 
     generalLightBgColor,
     generalDarkBgColor,
@@ -40,7 +40,7 @@ export const FOOTER_STYLES = {
     // Override general classes for nested components to maintain theme consistency
     componentOverrides: {
         // Example: Apply the main text color to the link hover in the inner component
-        linkText: `${ComponentStyles.paragraphText} hover:!text-cyan-400 dark:hover:!text-cyan-400`,
+        linkText: `${paragraphText} hover:!text-cyan-400 dark:hover:!text-cyan-400`,
         heading: 'text-xl font-bold mb-3', // Larger heading for the footer sections
     },
     // Quick Links component colors
