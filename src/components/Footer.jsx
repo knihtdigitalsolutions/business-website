@@ -1,6 +1,6 @@
 import React from 'react';
 // Assuming 'Links.js' exports these components and the FooterStyles config
-import { SocialLinks, QuickLinks, SocialSVGMap, YouTube, FooterStyles as ComponentStyles } from './footerparts/Links';
+import { SocialLinks, QuickLinks, SocialSVGMap, YouTube} from './footerparts/Links';
 
 // ====================================================================
 //                             1. MAIN FOOTER STYLES CONFIGURATION 🎨

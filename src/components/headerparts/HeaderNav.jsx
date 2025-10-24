@@ -34,10 +34,10 @@ export const HeaderNav = ({ style, navigate, heading='KNiHT Digital Solutions' }
                 initial={{ y: -40, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1 }}
-                className="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90vw] max-w-5xl rounded-2xl shadow-2xl bg-white/30 dark:bg-gray-900/60 backdrop-blur-lg border border-white/30 dark:border-cyan-900 flex items-center justify-between px-8 py-4"
+                className="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90vw] max-w-5xl rounded-2xl shadow-2xl bg-white/30 dark:bg-gray-900/60 backdrop-blur-lg border border-white/30 dark:border-cyan-900 flex items-center justify-between p-2"
                 style={{ boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.18)' }}
             >
-                <Logo size={40} className="w-20 h-20 drop-shadow-lg" />
+                <Logo size={50} className="drop-shadow-md drop-shadow-cyan-800 w-30 h-30" />
                 <nav className="hidden lg:flex flex-wrap gap-8 items-center justify-center text-lg font-semibold tracking-wide">
                     {homeNavLinks.map((link, i) => (
                         <motion.button
@@ -54,7 +54,7 @@ export const HeaderNav = ({ style, navigate, heading='KNiHT Digital Solutions' }
                 {/* Mobile Hamburger Button */}
                 <button
                     onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-                    className="lg:hidden text-gray-800 dark:text-white"
+                    className="lg:hidden text-gray-800 dark:text-white mr-5"
                     aria-label="Toggle mobile menu"
                 >
                     <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -73,16 +73,22 @@ export const HeaderNav = ({ style, navigate, heading='KNiHT Digital Solutions' }
                     animate={{ x: 0 }}
                     exit={{ x: '100%' }}
                     transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                    className="fixed h-full w-[80vw] max-w-xs lg:hidden right-0 top-0 z-[999] rounded-l-2xl bg-white/80 dark:bg-gray-900/90 backdrop-blur-2xl shadow-2xl p-6 border-l border-cyan-200 dark:border-cyan-900"
+                    className="fixed h-full w-[80vw] max-w-xs lg:hidden right-0 top-0 z-[999] rounded-l-2xl bg-white/80 dark:bg-gray-900/90 backdrop-blur-2xl shadow-2xl p-6 border-l border-cyan-200 dark:border-cyan-900 overflow-hidden overflow-y-auto"
                 >
                     <div className="flex flex-col items-center p-4 gap-6 h-full">
                         <div className="flex justify-between w-full items-center mb-4">
-                            <h3 className="text-2xl font-extrabold tracking-widest text-cyan-700 dark:text-cyan-300 uppercase">{heading}</h3>
+                            <div className="flex gap-2 w-full">
+                                <Logo size={50} className="drop-shadow-lg" />
+                                <h3 className="text-lg font-extrabold tracking-widest text-cyan-700 dark:text-cyan-300 uppercase">{heading}</h3>
+                            </div>
                             <button onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
                                 <XCircle className="w-7 h-7 text-cyan-700 dark:text-cyan-300" />
                             </button>
                         </div>
-                        <nav className="flex flex-col gap-6 items-center w-full mt-8">
+                        <div className="flex-1 bg-cyan-500" />
+                        <DarkModeToggle />
+                        <div className="flex-1 bg-cyan-500" />
+                        <nav className="flex flex-col gap-6 items-center w-full mt-2 pb-10">
                             {homeNavLinks.map((link, i) => (
                                 <motion.button
                                     key={link.name}
@@ -95,8 +101,6 @@ export const HeaderNav = ({ style, navigate, heading='KNiHT Digital Solutions' }
                                 </motion.button>
                             ))}
                         </nav>
-                        <div className="flex-1" />
-                        <DarkModeToggle />
                     </div>
                 </motion.div>
             )}
