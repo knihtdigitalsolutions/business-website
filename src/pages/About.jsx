@@ -72,7 +72,7 @@ const About = ({ isSummary }) => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
         >
-          Kniht Technologies is a forward-thinking tech company delivering consultancy, web & mobile development, cyber security, and blockchain solutions.
+          Kniht Digital Solutions is a forward-thinking business delivering consultancy, web & mobile development, cyber security, and blockchain solutions.
         </motion.p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           {[{

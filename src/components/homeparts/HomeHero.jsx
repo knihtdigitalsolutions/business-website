@@ -100,7 +100,7 @@ const HomeHero = () => {
                         className="backdrop-blur-xl bg-white/10 dark:bg-gray-900/40 border border-cyan-200/30 dark:border-cyan-900/40 rounded-3xl px-8 py-6 shadow-2xl max-w-2xl text-center"
                     >
                         <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white drop-shadow-lg text-center uppercase mb-2">
-                            Kniht Technologies
+                            Kniht Digital Solutions
                         </h1>
                         <p className="text-lg md:text-2xl text-white/90 font-medium drop-shadow mb-0">
                             Empowering your business with consultancy, web & mobile development, cyber security, and blockchain solutions.
