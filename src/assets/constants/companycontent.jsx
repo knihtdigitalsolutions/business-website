@@ -72,3 +72,32 @@ export const Content = ({ isSummary }) => {
         </div>
     )
 };
+
+export const footerData = {
+  company: {
+    heading: 'KNiHT Digital Solutions',
+    tagline: 'Empowering businesses with innovative digital solutions and expert guidance.',
+    email: 'knihtdigitalsolutions@gmail.com',
+    phone: '+256 792 332655',
+    address: 'kampala, Uganda',
+  },
+  quickLinks: [
+    { title: 'About', href: '/about' },
+    { title: 'Services', href: '/services' },
+    { title: 'Portfolio', href: '/portfolio' },
+    { title: 'News', href: '/news' },
+    { title: 'Contact', href: '/contact' },
+  ],
+  socialLinks: [
+    { network: 'github', url: 'https://www.github.com/knihttech' },
+    { network: 'linkedin', url: 'https://www.linkedin.com/company/kniht-digital-solutions/' },
+    { network: 'x', url: 'https://x.com/knihttech' },
+  ],
+};
+
+// Mock data simulating the latest videos fetched from the Gemini API
+export const mockYoutubeData = [
+  { title: 'The Future of AI in Web Dev (Latest)', url: 'https://www.youtube.com/watch?v=ai_future' },
+  { title: 'Cloud Migration: A Step-by-Step Guide', url: 'https://www.youtube.com/watch?v=cloud_guide' },
+  { title: 'Q3 Product Update & Features', url: 'https://www.youtube.com/watch?v=q3_update' },
+];

@@ -5,7 +5,6 @@ import Logo from "./Logo";
 import { homeNavLinks } from "../../assets/constants/navlinks";
 import DarkModeToggle from "../DarkModeToggle";
 import { XCircle } from "lucide-react";
-import { generalDarkBgColor, generalLightBgColor } from "../../assets/constants/colors";
 
 const scrollToAnchor = (anchor) => {
   const el = document.getElementById(anchor);
@@ -14,7 +13,7 @@ const scrollToAnchor = (anchor) => {
   }
 }
 
-export const HomeHeaderNav = ({ style, navigate, heading='Kniht' }) => {
+export const HeaderNav = ({ style, navigate, heading='KNiHT Digital Solutions' }) => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
 
@@ -38,7 +37,7 @@ export const HomeHeaderNav = ({ style, navigate, heading='Kniht' }) => {
                 className="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90vw] max-w-5xl rounded-2xl shadow-2xl bg-white/30 dark:bg-gray-900/60 backdrop-blur-lg border border-white/30 dark:border-cyan-900 flex items-center justify-between px-8 py-4"
                 style={{ boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.18)' }}
             >
-                <Logo size={40} className="w-12 h-12 drop-shadow-lg" />
+                <Logo size={40} className="w-20 h-20 drop-shadow-lg" />
                 <nav className="hidden lg:flex flex-wrap gap-8 items-center justify-center text-lg font-semibold tracking-wide">
                     {homeNavLinks.map((link, i) => (
                         <motion.button

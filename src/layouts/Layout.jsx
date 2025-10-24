@@ -7,6 +7,13 @@ import Footer from '../components/Footer';
 import AdminNav from '../components/adminparts/AdminNav';
 import AdminSideNav from '../components/adminparts/AdminSideNav';
 import { Outlet } from 'react-router-dom';
+import { footerData, mockYoutubeData } from '../assets/constants/companycontent';
+
+/**
+ * The main Footer component, accepting appearance and data props.
+ * @param {footerData} props.data - The complete data object to render.
+ * @param {mockYoutubeData} props.data - The complete data object to render.
+ */
 
 export const Layout = ({ children }) => {
   const {isDark} = useDarkMode();
@@ -28,17 +35,25 @@ export const Layout = ({ children }) => {
         transition: { duration: 0.6 },
         className: `w-full pt-[50px]`
       };
-
+    
+  const data = {
+    footerData,
+    mockYoutubeData
+  }
   // Render the motion component with dynamic props
   return (
     <>
-      <Header />
+      <Header businessName="KNiHT Digital Solutions" />
       <motion.div as={containerType} {...motionProps}>
         {/* Render children if directly used, otherwise render nested route content */}
         {/* {children} */}
         <Outlet />
       </motion.div>
-      <Footer isDark={isDark}/>
+      <Footer 
+        isDark={isDark} 
+        data={data}
+        businessName="KNiHT Digital Solutions"
+      />
     </>
   );
 };

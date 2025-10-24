@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { HomeHeaderNav } from './headerparts/HeaderNav';
+import { HeaderNav } from './headerparts/HeaderNav';
 
 const luxuryNavStyle = {
   headerProps: {},
@@ -8,10 +8,10 @@ const luxuryNavStyle = {
   showIcons: false,
 };
 
-const Header = () => {
+const Header = ({ businessName }) => {
   const navigate = useNavigate();
   return (
-    <HomeHeaderNav style={luxuryNavStyle} navigate={navigate} />
+    <HeaderNav style={luxuryNavStyle} navigate={navigate} heading={businessName} />
   );
 };
 

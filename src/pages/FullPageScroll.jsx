@@ -9,7 +9,6 @@ import News from '../pages/News';
 import Contact from '../pages/Contact';
 import HomeSlider from '../components/homeparts/HomeSlider';
 import ThreeDSection from '../components/ThreeDSection';
-import Footer from '../components/Footer';
 
 
 const fadeInVariants = {
@@ -19,7 +18,7 @@ const fadeInVariants = {
 
 const FullPageScroll = () => {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-cyan-100 via-white to-green-100 dark:from-gray-900 dark:via-gray-800 dark:to-cyan-900">
+    <div className="w-full min-h-screen bg-gradient-to-br from-cyan-200 via-gray-200 to-cyan-300 dark:from-gray-800 dark:via-yellow-700 dark:to-cyan-900">
       {/* Slider below navbar */}
       <div className="w-full z-50 mt-20">
         <HomeSlider />
