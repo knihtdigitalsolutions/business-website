@@ -1,13 +1,16 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { usePageContext } from '../context/PageContext';
-import { useDarkMode } from '../context/DarkModeContext';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import AdminNav from '../components/adminparts/AdminNav';
-import AdminSideNav from '../components/adminparts/AdminSideNav';
-import { Outlet } from 'react-router-dom';
-import { footerData, mockYoutubeData } from '../assets/constants/companycontent';
+import React from "react";
+import { motion } from "framer-motion";
+import { usePageContext } from "../context/PageContext";
+import { useDarkMode } from "../context/DarkModeContext";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import AdminNav from "../components/adminparts/AdminNav";
+import AdminSideNav from "../components/adminparts/AdminSideNav";
+import { Outlet } from "react-router-dom";
+import {
+  footerData,
+  mockYoutubeData,
+} from "../assets/constants/companycontent";
 
 /**
  * The main Footer component, accepting appearance and data props.
@@ -16,30 +19,30 @@ import { footerData, mockYoutubeData } from '../assets/constants/companycontent'
  */
 
 export const Layout = ({ children }) => {
-  const {isDark} = useDarkMode();
+  const { isDark } = useDarkMode();
   const { isHome } = usePageContext(); // Use the context to determine the page type
 
   // Define dynamic properties based on the 'isHome' state
-  const containerType = isHome ? 'div' : 'section'; // Use a div for 'home' and a section for other pages
+  const containerType = isHome ? "div" : "section"; // Use a div for 'home' and a section for other pages
   const motionProps = isHome
     ? {
         initial: { opacity: 0, scale: 0.95 },
         animate: { opacity: 1, scale: 1 },
         transition: { duration: 1 },
-        className: ''
+        className: "",
       }
     : {
         initial: { opacity: 0, y: 50 },
         whileInView: { opacity: 1, y: 0 },
         viewport: { once: true },
         transition: { duration: 0.6 },
-        className: `w-full pt-[50px]`
+        className: `w-full pt-[50px]`,
       };
-    
+
   const data = {
     footerData,
-    mockYoutubeData
-  }
+    mockYoutubeData,
+  };
   // Render the motion component with dynamic props
   return (
     <>
@@ -49,8 +52,8 @@ export const Layout = ({ children }) => {
         {/* {children} */}
         <Outlet />
       </motion.div>
-      <Footer 
-        isDark={isDark} 
+      <Footer
+        isDark={isDark}
         data={data}
         businessName="KNiHT Digital Solutions"
       />

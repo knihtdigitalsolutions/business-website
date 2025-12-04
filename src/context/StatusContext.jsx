@@ -7,7 +7,7 @@ export const StatusProvider = ({ children }) => {
   const [isSideNavOpen, setIsSideNavOpen] = useState(true);
   const [isRightSideNavOpen, setIsRightSideNavOpen] = useState(true);
   // state for loading
-  //auth loading
+  //(auth) loading
   const [loadCheckAuth, setLoadCheckAuth] = useState(false);
   //dashboard loading
   const [loading, setLoading] = useState(false);

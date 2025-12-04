@@ -152,7 +152,7 @@ const Contact = ({ isSummary = false }) => {
             </form>
             {status && <p className="mt-4 text-center text-sm">{status}</p>}
           </motion.div>
-          {/* Map & Info */}
+          {/* Map.tsx & Info */}
           {!isSummary && (
             <motion.div
               className="space-y-4 flex flex-col items-center"

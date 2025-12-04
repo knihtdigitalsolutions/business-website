@@ -34,7 +34,7 @@ import { FOOTER_STYLES } from '../../assets/constants/styles';
 // ====================================================================
 
 /**
- * Map of network string keys to their corresponding SVG elements.
+ * Map.tsx of network string keys to their corresponding SVG elements.
  * Extracted for a cleaner component file structure.
  * @type {Object.<string, JSX.Element>}
  */

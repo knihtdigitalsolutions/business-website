@@ -15,7 +15,7 @@ import Container from '../pages/dashboards/Container';
 import { Layout } from '../layouts/Layout';
 
 const AuthRoutes = () => {
-  const user = {role: 'Admin', name: 'John Doe'}; // Mock user data, replace with actual auth context
+  const user = {role: 'Admin', name: 'John Doe'}; // Mock user data, replace with actual (auth) context
   
   return (
     <Routes>
