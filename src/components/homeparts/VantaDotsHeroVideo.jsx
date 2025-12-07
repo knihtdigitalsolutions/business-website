@@ -4,7 +4,6 @@ import HomeHero from "./HomeHero";
 const VantaDotsHeroVideo = (props) => {
   // 1. Create a ref to attach to the target DOM element
   const vantaRef = useRef(null);
-
   // 2. Create a ref to store the Vanta instance for cleanup
   const vantaEffect = useRef(null);
 
@@ -13,7 +12,7 @@ const VantaDotsHeroVideo = (props) => {
     if (vantaRef.current && window.VANTA) {
       // Check if we already initialized Vanta to avoid re-initialization
       if (!vantaEffect.current) {
-        // 4. Initialize VANTA.DOTS
+        // 4. Initialize VANTA.WAVES
         vantaEffect.current = window.VANTA.WAVES({
           el: vantaRef.current, // Use the ref as the element selector
           mouseControls: true,
@@ -33,12 +32,14 @@ const VantaDotsHeroVideo = (props) => {
     return () => {
       if (vantaEffect.current) {
         vantaEffect.current.destroy();
+        vantaEffect.current = null;
       }
     };
 
     // The empty dependency array [] ensures this effect runs only once after the initial render
   }, []);
   console.log("Rendering VantaDotsHeroVideo");
+
   return (
     // 6. Attach the ref to the hero element where Vanta should be rendered
     <div

@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import axios from 'axios';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import axios from "axios";
+import { MapPin, Phone, Mail } from "lucide-react";
 // import { Layout } from '../layouts/Layout';
 
 const Contact = ({ isSummary = false }) => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [status, setStatus] = useState('');
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -14,15 +18,18 @@ const Contact = ({ isSummary = false }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus('Sending...');
+    setStatus("Sending...");
     try {
       // Replace with your actual backend endpoint
-      const response = await axios.post('http://localhost:3000/api/contact', formData);
-      setStatus('Message sent successfully! Thanks for reaching out.');
-      setFormData({ name: '', email: '', message: '' });
+      const response = await axios.post(
+        "http://localhost:3000/api/contact",
+        formData
+      );
+      setStatus("Message sent successfully! Thanks for reaching out.");
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error('Error sending message:', error);
-      setStatus('Failed to send message. Please try again later.');
+      console.error("Error sending message:", error);
+      setStatus("Failed to send message. Please try again later.");
     }
   };
 
@@ -39,19 +46,16 @@ const Contact = ({ isSummary = false }) => {
       <motion.div
         className="absolute inset-0 z-0 pointer-events-none rounded-3xl"
         style={{
-          background: 'linear-gradient(120deg, rgba(0,255,255,0.10) 0%, rgba(0,0,0,0.08) 60%, #fff 100%)',
+          background:
+            "linear-gradient(120deg, rgba(0,255,255,0.10) 0%, rgba(0,0,0,0.08) 60%, #fff 100%)",
         }}
         animate={{
-          backgroundPosition: [
-            '0% 0%',
-            '100% 100%',
-            '0% 0%'
-          ]
+          backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"],
         }}
         transition={{
           duration: 18,
           repeat: Infinity,
-          ease: 'linear',
+          ease: "linear",
         }}
       />
       {/* Neon Glow Border */}
@@ -76,7 +80,7 @@ const Contact = ({ isSummary = false }) => {
             transition={{
               duration: 8 + Math.random() * 6,
               repeat: Infinity,
-              repeatType: 'mirror',
+              repeatType: "mirror",
               delay: Math.random() * 2,
             }}
           />
@@ -84,7 +88,7 @@ const Contact = ({ isSummary = false }) => {
       </div>
       <div className="relative z-20 max-w-5xl mx-auto flex flex-col items-center text-center">
         <motion.h2
-          className="text-4xl md:text-5xl font-extrabold text-cyan-300 mb-6 drop-shadow-lg tracking-tight"
+          className="text-4xl md:text-5xl font-extrabold text-cyan-700 dark:text-cyan-200 mb-6 drop-shadow-lg tracking-tight"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -92,12 +96,13 @@ const Contact = ({ isSummary = false }) => {
           Contact Us
         </motion.h2>
         <motion.p
-          className="text-lg md:text-xl text-cyan-100 font-medium leading-relaxed mb-8"
+          className="text-lg md:text-xl text-gray-700 dark:text-cyan-100 font-medium leading-relaxed mb-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
         >
-          Get in touch with us for a consultation or to learn more about our services.
+          Get in touch with us for a consultation or to learn more about our
+          services.
         </motion.p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           {/* Contact Form */}
@@ -107,7 +112,7 @@ const Contact = ({ isSummary = false }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            whileHover={{ y: -6, boxShadow: '0 0 24px #00fff7' }}
+            whileHover={{ y: -6, boxShadow: "0 0 24px #00fff7" }}
           >
             <span className="pointer-events-none absolute inset-0 rounded-3xl border-2 border-cyan-400/30 opacity-0 group-hover:opacity-100 blur-[2px] animate-pulse transition-opacity duration-300" />
             <form onSubmit={handleSubmit} className="space-y-4 w-full">
@@ -117,9 +122,12 @@ const Contact = ({ isSummary = false }) => {
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full p-3 border rounded-md text-base bg-white dark:bg-gray-900"
+                className="w-full p-3 border rounded-md text-base bg-white dark:bg-gray-900 dark:text-cyan-100"
                 required
-                whileFocus={{ borderColor: '#00fff7', boxShadow: '0 0 8px #00fff7' }}
+                whileFocus={{
+                  borderColor: "#00fff7",
+                  boxShadow: "0 0 8px #00fff7",
+                }}
               />
               <motion.input
                 type="email"
@@ -127,24 +135,30 @@ const Contact = ({ isSummary = false }) => {
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-3 border rounded-md text-base bg-white dark:bg-gray-900"
+                className="w-full p-3 border rounded-md text-base bg-white dark:bg-gray-900 dark:text-cyan-100"
                 required
-                whileFocus={{ borderColor: '#00fff7', boxShadow: '0 0 8px #00fff7' }}
+                whileFocus={{
+                  borderColor: "#00fff7",
+                  boxShadow: "0 0 8px #00fff7",
+                }}
               />
               <motion.textarea
                 name="message"
                 placeholder="Your Message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-3 border rounded-md text-base bg-white dark:bg-gray-900"
+                className="w-full p-3 border rounded-md text-base bg-white dark:bg-gray-900 dark:text-cyan-100"
                 rows={5}
                 required
-                whileFocus={{ borderColor: '#00fff7', boxShadow: '0 0 8px #00fff7' }}
+                whileFocus={{
+                  borderColor: "#00fff7",
+                  boxShadow: "0 0 8px #00fff7",
+                }}
               />
               <motion.button
                 type="submit"
                 className="bg-cyan-600 text-white p-3 rounded-md hover:bg-cyan-700 transition-colors text-base w-full font-semibold shadow"
-                whileHover={{ scale: 1.04, boxShadow: '0 0 16px #00fff7' }}
+                whileHover={{ scale: 1.04, boxShadow: "0 0 16px #00fff7" }}
                 whileTap={{ scale: 0.98 }}
               >
                 Send Message
@@ -178,15 +192,21 @@ const Contact = ({ isSummary = false }) => {
               <div className="space-y-2 bg-white/60 dark:bg-gray-900/60 rounded-xl p-4 shadow-lg w-full">
                 <div className="flex items-center mb-2">
                   <MapPin size={20} className="mr-2 text-cyan-400" />
-                  <p className="text-cyan-100">123 Tech Lane, Innovation City, 45678</p>
+                  <p className="text-gray-700 dark:text-cyan-100">
+                    123 Tech Lane, Innovation City, 45678
+                  </p>
                 </div>
                 <div className="flex items-center mb-2">
                   <Phone size={20} className="mr-2 text-cyan-400" />
-                  <p className="text-cyan-100">+1 (555) 123-4567</p>
+                  <p className="text-gray-700 dark:text-cyan-100">
+                    +1 (555) 123-4567
+                  </p>
                 </div>
                 <div className="flex items-center">
                   <Mail size={20} className="mr-2 text-cyan-400" />
-                  <p className="text-cyan-100">info@knihttechnologies.com</p>
+                  <p className="text-gray-700 dark:text-cyan-100">
+                    info@knihttechnologies.com
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -195,6 +215,6 @@ const Contact = ({ isSummary = false }) => {
       </div>
     </motion.section>
   );
-}
+};
 
 export default Contact;

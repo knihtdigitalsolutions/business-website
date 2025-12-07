@@ -10,14 +10,14 @@ const Services = ({ isSummary }) => {
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
     >
-      <div className="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-200 via-transparent to-transparent dark:from-cyan-900" />
+      <div className="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(ellipse_at_top_right,var(--tw-gradient-stops))] from-green-200 via-transparent to-transparent dark:from-cyan-900" />
       <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-green-700 dark:text-cyan-300 mb-6 drop-shadow-lg tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-green-700 dark:text-cyan-200 mb-6 drop-shadow-lg tracking-tight">
           Our Services
         </h2>
-        <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 font-medium leading-relaxed mb-10">
-          Kniht Technologies offers a range of services to help your business
-          thrive in the digital age.
+        <p className="text-lg md:text-xl text-gray-700 dark:text-cyan-100 font-medium leading-relaxed mb-10">
+          Kniht Digital Solutions offers a range of services to help your
+          business thrive in the digital age.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12 w-full">
           {services.map((service, idx) => (
@@ -36,10 +36,10 @@ const Services = ({ isSummary }) => {
                 size={48}
                 className="text-cyan-400 drop-shadow-glow mb-3 group-hover:animate-pulse"
               />
-              <h3 className="text-xl font-bold mb-2 text-white drop-shadow-lg tracking-wide group-hover:text-cyan-200 transition-colors">
+              <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-cyan-100 drop-shadow-lg tracking-wide group-hover:text-cyan-200 transition-colors">
                 {service.title}
               </h3>
-              <p className="text-base text-center text-cyan-100/90 group-hover:text-cyan-50 transition-colors">
+              <p className="text-base text-center text-cyan-900 dark:text-cyan-100/90 group-hover:text-cyan-50 transition-colors">
                 {service.description}
               </p>
             </motion.div>
@@ -74,10 +74,10 @@ const Services = ({ isSummary }) => {
                 alt={demo.title}
                 className="rounded-lg mb-4 w-full h-32 sm:h-40 object-cover shadow-lg group-hover:shadow-cyan-400/30 transition-shadow"
               />
-              <h4 className="text-lg font-bold mb-2 text-white drop-shadow-lg tracking-wide group-hover:text-cyan-200 transition-colors">
+              <h4 className="text-lg font-bold mb-2 text-gray-900 dark:text-cyan-100 drop-shadow-lg tracking-wide group-hover:text-cyan-200 transition-colors">
                 {demo.title}
               </h4>
-              <p className="text-sm text-center text-cyan-100/90 group-hover:text-cyan-50 transition-colors">
+              <p className="text-sm text-center text-cyan-900 dark:text-cyan-100/90 group-hover:text-cyan-50 transition-colors">
                 {demo.desc}
               </p>
             </motion.div>
