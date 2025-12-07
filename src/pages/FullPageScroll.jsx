@@ -1,6 +1,4 @@
-import React from "react";
 import { motion } from "framer-motion";
-import HomeHero from "../components/homeparts/HomeHero";
 import HomeSectionWrapper from "../components/homeparts/HomeSectionWrapper";
 import About from "../pages/About";
 import Services from "../pages/Services";
@@ -10,6 +8,7 @@ import Contact from "../pages/Contact";
 import HomeSlider from "../components/homeparts/HomeSlider";
 import ThreeDSection from "../components/ThreeDSection";
 import { ArrowBigDown } from "lucide-react";
+import VantaDotsHeroVideo from "../components/homeparts/VantaDotsHeroVideo";
 
 const fadeInVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -41,7 +40,7 @@ const FullPageScroll = () => {
         viewport={{ once: true, amount: 0.5 }}
         id="hero"
       >
-        <HomeHero />
+        <VantaDotsHeroVideo />
       </motion.section>
 
       {/* About Section */}
