@@ -19,7 +19,7 @@ export default function InteractiveCube() {
 
   return (
     // Outer wrapper for the animated background and centering
-    <div className="flex items-center justify-center min-h-screen animate-tech-bg relative">
+    <div className="flex rounded-2xl items-center justify-center min-h-screen animate-tech-bg relative">
       {/* 2D Swiper Cube Component */}
       <div
         ref={cubeWrapperRef}

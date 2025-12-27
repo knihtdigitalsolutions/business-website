@@ -75,9 +75,14 @@ const HomeHero = () => {
             transition={{ delay: 0.2, duration: 1 }}
             className="backdrop-blur-xl bg-white/10 dark:bg-gray-900/40 border border-cyan-200/30 dark:border-cyan-900/40 rounded-3xl px-8 py-6 shadow-2xl max-w-2xl text-center"
           >
-            <p className="text-lg md:text-2xl text-white/90 font-medium drop-shadow mb-0">
-              Empowering your business with consultancy, web & mobile
-              development, cyber security, and blockchain solutions.
+            <p className="text-lg md:text-2xl text-white/90 font-medium drop-shadow mb-2">
+              We are here to help. It is the CIA...
+            </p>
+            <p className="shadow-md p-5 shadow-cyan-200 text-3xl font-bold md:text-2xl text-amber-500 drop-shadow mb-0">
+              Confidentiality, Integrity & Availability
+            </p>
+            <p className="text-lg md:text-2xl text-white/90 font-medium drop-shadow mt-2">
+              ...triad that drives us to constantly improve
             </p>
           </motion.div>
         </motion.div>

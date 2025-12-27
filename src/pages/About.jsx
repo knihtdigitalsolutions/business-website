@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Vision from "../assets/media/kniht-vision.jpg";
+import { aboutContent } from "../assets/constants/companycontent";
 
 const About = ({ isSummary }) => {
   return (
@@ -69,23 +71,19 @@ const About = ({ isSummary }) => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
         >
-          Kniht Digital Solutions is a forward-thinking business delivering
-          consultancy, web & mobile development, cyber security, and blockchain
-          solutions.
+          Kniht Digital Solutions is a forward-thinking business founded in 2023
+        </motion.p>
+        <motion.p
+          className="text-lg md:text-xl text-gray-800 dark:text-cyan-200 font-medium leading-relaxed mb-8"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+        >
+          Always ready to embrace new challenges and deliver innovative
+          solutions that drive success.
         </motion.p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-          {[
-            {
-              img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
-              title: "Our Team",
-              desc: "A diverse group of experts passionate about technology and innovation.",
-            },
-            {
-              img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
-              title: "Our Vision",
-              desc: "To empower businesses with cutting-edge digital solutions.",
-            },
-          ].map((item, idx) => (
+          {aboutContent.map((item, idx) => (
             <motion.div
               key={item.title}
               className="relative group bg-white/10 dark:bg-gray-900/30 rounded-3xl shadow-2xl p-6 flex flex-col items-center border border-cyan-300/30 dark:border-cyan-800/40 backdrop-blur-xl overflow-hidden transition-transform duration-300 hover:scale-[1.04] hover:shadow-cyan-400/40"
@@ -101,10 +99,10 @@ const About = ({ isSummary }) => {
                 alt={item.title}
                 className="rounded-lg mb-4 w-full h-32 object-cover shadow-lg group-hover:shadow-cyan-400/30 transition-shadow"
               />
-              <h4 className="text-lg font-bold mb-2 text-gray-900 dark:text-cyan-100 drop-shadow-lg tracking-wide group-hover:text-cyan-200 transition-colors">
+              <h4 className="text-lg font-bold mb-2 text-gray-900 dark:text-cyan-100 drop-shadow-lg tracking-wide group-hover:text-cyan-700 transition-colors">
                 {item.title}
               </h4>
-              <p className="text-sm text-center text-cyan-900 dark:text-cyan-100/90 group-hover:text-cyan-50 transition-colors">
+              <p className="text-sm text-center text-cyan-900 dark:text-cyan-100/90 group-hover:text-cyan-700 transition-colors">
                 {item.desc}
               </p>
             </motion.div>
