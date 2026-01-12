@@ -178,8 +178,8 @@ const Contact = ({ isSummary = false }) => {
               {/* Google Maps Embed */}
               <div className="w-full h-64 rounded-xl overflow-hidden shadow-lg">
                 <iframe
-                  title="KNIHT Technologies Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093747!2d144.9537363155042!3d-37.81720974202198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f1f1f1%3A0x5045675218ce6e0!2s123%20Tech%20Lane%2C%20Innovation%20City%2C%2045678!5e0!3m2!1sen!2sus!4v1633072800000!5m2!1sen!2sus"
+                  title="KNIHT Digital Solution Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.753364964171!2d32.5484824!3d0.3267439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc00449490b3%3A0xc6651347065963b!2sKNIHT%20Digital%20Solution!5e0!3m2!1sen!2sug!4v1710000000000!5m2!1sen!2sug"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -193,19 +193,19 @@ const Contact = ({ isSummary = false }) => {
                 <div className="flex items-center mb-2">
                   <MapPin size={20} className="mr-2 text-cyan-400" />
                   <p className="text-gray-700 dark:text-cyan-100">
-                    123 Tech Lane, Innovation City, 45678
+                    Coming soon (Remote_Work - Based for now)
                   </p>
                 </div>
                 <div className="flex items-center mb-2">
                   <Phone size={20} className="mr-2 text-cyan-400" />
                   <p className="text-gray-700 dark:text-cyan-100">
-                    +1 (555) 123-4567
+                    +256 (792) 332655
                   </p>
                 </div>
                 <div className="flex items-center">
                   <Mail size={20} className="mr-2 text-cyan-400" />
                   <p className="text-gray-700 dark:text-cyan-100">
-                    info@knihttechnologies.com
+                    knihtdigitalsolutions@gmail.com
                   </p>
                 </div>
               </div>

@@ -1,14 +1,23 @@
 import {
   Code,
   Shield,
-  Smartphone,
   Lightbulb,
   BrainCircuit,
   Cpu,
+  Globe,
+  MonitorSmartphone,
+  Utensils,
+  HandHeart,
+  FileUser,
+  Banknote,
+  Scissors,
 } from "lucide-react";
-import { Globe, MonitorSmartphone, Server, Users } from "lucide-react";
 import Team from "../media/kniht-team.jpg";
 import Vision from "../media/kniht-vision.jpg";
+import Tami from "../media/tamiuganda.png";
+import GN from "../media/gnassociates.png";
+import Anita from "../media/anita-s-kitchen.png";
+import Marlan from "../media/marlansunisex.png";
 
 export const aboutContent = [
   {
@@ -54,24 +63,39 @@ export const servicesContent = [
 ];
 export const portfolioContent = [
   {
-    icon: Globe,
-    title: "Global Reach",
-    desc: "Projects delivered worldwide.",
+    icon: FileUser,
+    img: Tami,
+    title: "TAMI Uganda",
+    desc: "A website designed for the Transafrican Management Institute (TAMI). By Nuwabiine Mbiine & Munyumya Allan",
+    link: "https://tamiuganda.org/",
   },
   {
-    icon: MonitorSmartphone,
-    title: "Mobile Solutions",
-    desc: "Innovative mobile apps for various industries.",
+    icon: Banknote,
+    img: GN,
+    title: "GN ASSOCIATES",
+    desc: "Designed for GN Associates, a finance company in Uganda. By Nuwabiine Mbiine",
+    link: "https://gnassociatesug.com/",
   },
   {
-    icon: Server,
-    title: "Cloud Services",
-    desc: "Robust cloud infrastructure and hosting.",
+    icon: HandHeart,
+    img: Team,
+    title: "STAWI Uganda",
+    desc: "A website designed for Stawi Uganda. By Nuwabiine Mbiine",
+    link: "https://www.stawiuganda.org/",
   },
   {
-    icon: Users,
-    title: "Team Collaboration",
-    desc: "Working with talented teams and partners.",
+    icon: Utensils,
+    img: Anita,
+    title: "Anita's Kitchen",
+    desc: "A website designed for Anita's Kitchen, a catering company in Uganda. By Nuwabiine Mbiine",
+    link: "https://anita-s-kitchen.vercel.app/",
+  },
+  {
+    icon: Scissors,
+    img: Marlan,
+    title: "Anita's Kitchen",
+    desc: "A website designed for Anita's Kitchen, a catering company in Uganda. By Nuwabiine Mbiine",
+    link: "https://anita-s-kitchen.vercel.app/",
   },
 ];
 export const newsContent = [

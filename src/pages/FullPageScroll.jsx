@@ -17,7 +17,7 @@ const fadeInVariants = {
 
 const FullPageScroll = () => {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full h-full flex flex-col gap-10 items-center justify-center">
       {/* Slider below navbar */}
       <div className="w-full p-10 mt-20">
         <p className="text-3xl font-bold text-center mb-6">
@@ -33,7 +33,7 @@ const FullPageScroll = () => {
 
       {/* Hero Section */}
       <motion.section
-        className="w-full min-h-screen flex items-center justify-center"
+        className="w-full h-full flex items-center justify-center"
         variants={fadeInVariants}
         initial="hidden"
         whileInView="visible"
@@ -45,7 +45,7 @@ const FullPageScroll = () => {
 
       {/* About Section */}
       <motion.section
-        className="w-full min-h-screen flex items-center justify-center"
+        className="w-full h-full flex items-center justify-center"
         variants={fadeInVariants}
         initial="hidden"
         whileInView="visible"
@@ -59,7 +59,7 @@ const FullPageScroll = () => {
 
       {/* 3D Section */}
       <motion.section
-        className="w-full min-h-screen flex items-center justify-center"
+        className="w-full h-full flex items-center justify-center"
         variants={fadeInVariants}
         initial="hidden"
         whileInView="visible"
@@ -71,11 +71,11 @@ const FullPageScroll = () => {
 
       {/* Services Section */}
       <motion.section
-        className="w-full min-h-screen flex items-center justify-center"
+        className="w-full h-full flex items-center justify-center"
         variants={fadeInVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        // initial="hidden"
+        // whileInView="visible"
+        // viewport={{ once: true, amount: 0.5 }}
         id="services"
       >
         <HomeSectionWrapper>
@@ -85,7 +85,7 @@ const FullPageScroll = () => {
 
       {/* Portfolio Section */}
       <motion.section
-        className="w-full min-h-screen flex items-center justify-center"
+        className="w-full h-full flex items-center justify-center"
         variants={fadeInVariants}
         initial="hidden"
         whileInView="visible"
@@ -99,7 +99,7 @@ const FullPageScroll = () => {
 
       {/* News Section */}
       <motion.section
-        className="w-full min-h-screen flex items-center justify-center"
+        className="w-full h-full flex items-center justify-center"
         variants={fadeInVariants}
         initial="hidden"
         whileInView="visible"
@@ -113,7 +113,7 @@ const FullPageScroll = () => {
 
       {/* Contact Section */}
       <motion.section
-        className="w-full min-h-screen flex items-center justify-center"
+        className="w-full h-full flex items-center justify-center"
         variants={fadeInVariants}
         initial="hidden"
         whileInView="visible"

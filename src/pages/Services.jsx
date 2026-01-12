@@ -4,7 +4,7 @@ import { servicesContent } from "../assets/constants/companycontent";
 const Services = ({ isSummary }) => {
   return (
     <motion.section
-      className="relative py-16 md:py-24 px-2 sm:px-6 min-h-[60vh] bg-linear-to-br from-green-50 via-white to-cyan-100 dark:from-gray-900 dark:via-gray-800 dark:to-cyan-900 rounded-3xl shadow-2xl overflow-hidden"
+      className="relative py-16 md:py-24 px-2 sm:px-6 min-h-screen bg-linear-to-br from-green-200 via-white to-cyan-200 dark:from-gray-900 dark:via-gray-800 dark:to-cyan-900 rounded-3xl shadow-2xl overflow-hidden"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -12,7 +12,7 @@ const Services = ({ isSummary }) => {
     >
       <div className="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(ellipse_at_top_right,var(--tw-gradient-stops))] from-green-200 via-transparent to-transparent dark:from-cyan-900" />
       <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-green-700 dark:text-cyan-200 mb-6 drop-shadow-lg tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-amber-800 dark:text-amber-200 mb-6 drop-shadow-lg tracking-tight">
           Our Services
         </h2>
         <p className="text-lg md:text-xl text-gray-700 dark:text-cyan-100 font-medium leading-relaxed mb-10">
