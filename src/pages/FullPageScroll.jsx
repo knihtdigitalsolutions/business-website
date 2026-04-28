@@ -87,9 +87,9 @@ const FullPageScroll = () => {
       <motion.section
         className="w-full h-full flex items-center justify-center"
         variants={fadeInVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        // initial="hidden"
+        // whileInView="visible"
+        // viewport={{ once: true, amount: 0.5 }}
         id="portfolio"
       >
         <HomeSectionWrapper>
@@ -101,9 +101,9 @@ const FullPageScroll = () => {
       <motion.section
         className="w-full h-full flex items-center justify-center"
         variants={fadeInVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        // initial="hidden"
+        // whileInView="visible"
+        // viewport={{ once: true, amount: 0.5 }}
         id="news"
       >
         <HomeSectionWrapper>
