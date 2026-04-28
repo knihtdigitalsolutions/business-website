@@ -38,12 +38,12 @@ export const HeaderNav = ({
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90vw] max-w-5xl rounded-2xl shadow-2xl bg-white/30 dark:bg-gray-900/60 backdrop-blur-lg border border-white/30 dark:border-cyan-900 flex items-center justify-between p-2"
+        className="fixed top-6 left-1/2 -translate-x-1/2 z-100 w-[90vw] max-w-5xl rounded-2xl shadow-2xl bg-white/30 dark:bg-gray-900/60 backdrop-blur-lg border border-white/30 dark:border-cyan-900 flex items-center justify-between p-2"
         style={{ boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.18)" }}
       >
         <Logo
           size={50}
-          className="drop-shadow-md drop-shadow-cyan-800 w-30 h-30"
+          className="drop-shadow-md drop-shadow-cyan-800 w-23 h-23"
         />
         <nav className="hidden lg:flex flex-wrap gap-8 items-center justify-center text-lg font-semibold tracking-wide">
           {homeNavLinks.map((link, i) => (
@@ -51,10 +51,10 @@ export const HeaderNav = ({
               key={link.name}
               href={link.path}
               // onClick() => handleNav(link)}
-              className="relative px-3 py-1 text-gray-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-300 transition group bg-transparent"
+              className="relative px-2 py-1 text-gray-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-300 transition group bg-transparent"
               whileHover={{ scale: 1.08 }}
             >
-              <span className="relative z-10">{link.name}</span>
+              <span className="relative z-10 text-[14px]">{link.name}</span>
               <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-cyan-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left rounded-full" />
             </motion.a>
           ))}
