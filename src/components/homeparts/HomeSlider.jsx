@@ -39,7 +39,7 @@ export default function InteractiveCube() {
           }}
           effect={"cube"}
           autoplay={{
-            delay: 5000,
+            delay: 4500,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
@@ -53,12 +53,12 @@ export default function InteractiveCube() {
           pagination={{ clickable: true }}
           modules={[EffectCube, Pagination, Autoplay]}
           speed={800}
-          className="mySwiper rounded-lg w-64 sm:w-80 md:w-[500px] h-[420px] md:h-[670px] shadow-xl overflow-hidden"
+          className="mySwiper rounded-lg w-64 sm:w-80 md:w-125 h-105 md:h-167.5 shadow-xl overflow-hidden"
         >
           {slides.map((s, index) => (
             <SwiperSlide key={index} className="relative bg-gray-900">
               {s.link ? (
-                <a href={s.link} className="block w-full h-full">
+                <>
                   <img
                     src={s.src}
                     alt={s.title || `Slide ${index}`}
@@ -75,12 +75,14 @@ export default function InteractiveCube() {
                       </p>
                     )}
                     {s.cta && (
-                      <span className="inline-block mt-3 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-md text-sm">
-                        {s.cta}
-                      </span>
+                      <a href={s.link} className="block w-full h-full">
+                        <span className="inline-block mt-3 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-md text-sm">
+                          {s.cta}
+                        </span>
+                      </a>
                     )}
                   </div>
-                </a>
+                </>
               ) : (
                 <>
                   <img
