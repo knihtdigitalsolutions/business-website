@@ -7,15 +7,12 @@ import Footer from "../components/Footer";
 import AdminNav from "../components/adminparts/AdminNav";
 import AdminSideNav from "../components/adminparts/AdminSideNav";
 import { Outlet } from "react-router-dom";
-import {
-  footerData,
-  mockYoutubeData,
-} from "../assets/constants/companycontent";
+import { footerData, youtubeData } from "../assets/constants/companycontent";
 
 /**
  * The main Footer component, accepting appearance and data props.
  * @param {footerData} props.data - The complete data object to render.
- * @param {mockYoutubeData} props.data - The complete data object to render.
+ * @param {youtubeData} props.data - The complete data object to render.
  */
 
 export const Layout = ({ children }) => {
@@ -41,7 +38,7 @@ export const Layout = ({ children }) => {
 
   const data = {
     footerData,
-    mockYoutubeData,
+    youtubeData,
   };
   // Render the motion component with dynamic props
   return (
@@ -65,9 +62,9 @@ export const AdminLayout = ({ children }) => {
   const { isDark } = useDarkMode();
   // Responsive row layout for side nav and content
   return (
-    <div className="w-full min-h-screen flex flex-row bg-gradient-to-br from-gray-100 via-green-50 to-cyan-100 dark:from-gray-900 dark:via-gray-800 dark:to-cyan-900 text-black dark:text-white">
+    <div className="w-full min-h-screen flex flex-row bg-linear-to-br from-gray-100 via-green-50 to-cyan-100 dark:from-gray-900 dark:via-gray-800 dark:to-cyan-900 text-black dark:text-white">
       {/* Side Navigation */}
-      <div className="hidden md:block min-w-[210px] max-w-[260px] border-r-2 border-green-500 bg-white/80 dark:bg-gray-900/80">
+      <div className="hidden md:block min-w-52.5 max-w-65 border-r-2 border-green-500 bg-white/80 dark:bg-gray-900/80">
         <AdminSideNav />
       </div>
       {/* Mobile SideNav Drawer */}

@@ -8,6 +8,7 @@ const Portfolio = () => {
   const handlePortfolioClick = (idx) => {
     navigate(`${idx}`);
   };
+
   return (
     <motion.section
       className="relative py-16 md:py-24 px-2 sm:px-6 min-h-[60vh] bg-linear-to-br from-cyan-200 via-amber-200 to-green-200 dark:from-gray-900 dark:via-gray-800 dark:to-cyan-900 rounded-3xl shadow-2xl overflow-hidden"

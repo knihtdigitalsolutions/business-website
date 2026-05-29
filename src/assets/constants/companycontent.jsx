@@ -19,6 +19,16 @@ import GN from "../media/gnassociates.png";
 import Anita from "../media/anita-s-kitchen.png";
 import Marlan from "../media/marlansunisex.png";
 
+import CandyKProject from "../media/candyk_luxe_cosmetics_ecommerce_project.png";
+import GNAssociates from "../media/gnassociates.png";
+import AnitaKitchen from "../media/anita-s-kitchen.png";
+import TamiUganda from "../media/tami-uganda-project.png";
+import MarlanUnisex from "../media/marlansunisex.png";
+import MigaddeCatholicParish from "../media/migadde-catholic-parish-hero-section.png";
+import KnihtdigitalSolutions from "../media/knihtdigitalsolutions-hero-section.png";
+import Slisuganda from "../media/slisuganda-hero-section.png";
+import Stawi from "../media/stawihopeofafrica-hero-section.png";
+
 export const aboutContent = [
   {
     img: Team,
@@ -64,38 +74,66 @@ export const servicesContent = [
 export const portfolioContent = [
   {
     icon: FileUser,
-    img: Tami,
+    img: CandyKProject,
+    title: "Candy K Luxe Cosmetics",
+    desc: "A sophisticated e-commerce storefront for Candy Kluxe Cosmetics, crafted to showcase premium beauty products and deliver a seamless, high-end shopping experience.",
+    link: "https://candykluxecosmetics.vercel.app/",
+  },
+  {
+    icon: FileUser,
+    img: AnitaKitchen,
+    title: "Anita's Kitchen",
+    desc: "An inviting digital interface for Anita’s Kitchen, highlighting their culinary offerings and streamlining the customer ordering process.",
+    link: "https://anita-s-kitchen.vercel.app/",
+  },
+  {
+    icon: FileUser,
+    img: KnihtdigitalSolutions,
+    title: "KNiHT Digital Solutions",
+    desc: "A modern, high-performance portfolio site for KNiHT Digital Solutions, showcasing innovative tech services and a commitment to digital excellence.",
+    link: "https://knihtdigitalsolutions.vercel.app/",
+  },
+  {
+    icon: FileUser,
+    img: MarlanUnisex,
+    title: "Marlan's Unisex Beauty Salon",
+    desc: "An elegant, user-friendly booking and showcase platform for Marlan’s Unisex Beauty Salon, designed to elevate the brand and simplify the client experience.",
+    link: "https://marlan-sunisexbeautysalon.vercel.app/",
+  },
+  {
+    icon: FileUser,
+    img: Slisuganda,
+    title: "SLIS uganda",
+    desc: "A digital ecosystem for SLIS Uganda, meticulously crafted to showcase their commitment to change and to provide an interactive space for community action and collaboration.",
+    link: "https://slisuganda.org/",
+  },
+  {
+    icon: FileUser,
+    img: TamiUganda,
     title: "TAMI Uganda",
-    desc: "A website designed for the Transafrican Management Institute (TAMI). By Nuwabiine Mbiine & Munyumya Allan",
+    desc: "A comprehensive educational hub for TAMI Uganda, facilitating access to professional management training and fostering organizational excellence across Africa.",
     link: "https://tamiuganda.org/",
   },
   {
-    icon: Banknote,
-    img: GN,
-    title: "GN ASSOCIATES",
-    desc: "Designed for GN Associates, a finance company in Uganda. By Nuwabiine Mbiine",
+    icon: FileUser,
+    img: GNAssociates,
+    title: "GN Associates",
+    desc: "A professional digital presence for GN Associates, highlighting their expertise in financial risk management, corporate governance, and strategic advisory services for institutional growth and sustainability.",
     link: "https://gnassociatesug.com/",
   },
   {
-    icon: HandHeart,
-    img: Team,
-    title: "STAWI Uganda",
-    desc: "A website designed for Stawi Uganda. By Nuwabiine Mbiine",
-    link: "https://www.stawiuganda.org/",
+    icon: FileUser,
+    img: Stawi,
+    title: "STAWI Hope of Africa",
+    desc: "A compelling digital platform for Stawi Hope of Africa, dedicated to showcasing their community-led initiatives in child development, sustainable agriculture, and holistic empowerment.",
+    link: "https://stawihopeofafrica.org/",
   },
   {
-    icon: Utensils,
-    img: Anita,
-    title: "Anita's Kitchen",
-    desc: "A website designed for Anita's Kitchen, a catering company in Uganda. By Nuwabiine Mbiine",
-    link: "https://anita-s-kitchen.vercel.app/",
-  },
-  {
-    icon: Scissors,
-    img: Marlan,
-    title: "Anita's Kitchen",
-    desc: "A website designed for Anita's Kitchen, a catering company in Uganda. By Nuwabiine Mbiine",
-    link: "https://anita-s-kitchen.vercel.app/",
+    icon: FileUser,
+    img: MigaddeCatholicParish,
+    title: "Migadde Catholic Parish",
+    desc: "A welcoming digital home for Migadde Catholic Parish, serving as a vital communication bridge for parish events, liturgical schedules, and community outreach.",
+    link: "https://migaddecatholicparish.org/",
   },
 ];
 export const newsContent = [
@@ -128,7 +166,7 @@ export const footerData = {
     { title: "Contact", href: "/contact" },
   ],
   socialLinks: [
-    { network: "github", url: "https://www.github.com/knihttech" },
+    { network: "github", url: "https://www.github.com/knihtdigitalsolutions" },
     {
       network: "linkedin",
       url: "https://www.linkedin.com/company/kniht-digital-solutions/",
@@ -138,17 +176,10 @@ export const footerData = {
 };
 
 // Mock data simulating the latest videos fetched from the Gemini API
-export const mockYoutubeData = [
+export const youtubeData = [
   {
-    title: "The Future of AI in Web Dev (Latest)",
-    url: "https://www.youtube.com/watch?v=ai_future",
-  },
-  {
-    title: "Cloud Migration: A Step-by-Step Guide",
-    url: "https://www.youtube.com/watch?v=cloud_guide",
-  },
-  {
-    title: "Q3 Product Update & Features",
-    url: "https://www.youtube.com/watch?v=q3_update",
+    title:
+      "UG Quantum Computing In 5 Minutes | Quantum Computing Explained | Quantum Computer | Simplilearn ",
+    url: "https://www.youtube.com/watch?v=X8MZWCGgIb8",
   },
 ];

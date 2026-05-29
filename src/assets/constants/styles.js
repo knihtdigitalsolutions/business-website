@@ -45,19 +45,19 @@ export const FOOTER_STYLES = {
     },
     // Quick Links component colors
     quickLinks: {
-        headingColor: "text-cyan-800 dark:bg-cyan-200",
+        headingColor: "text-cyan-800 dark:bg-cyan-300",
     },
     
     // Social Links component colors
     socialLinks: {
-        headingColor: "text-cyan-800 dark:bg-cyan-200",
+        headingColor: "text-cyan-800 dark:bg-cyan-300",
         iconContainer: "w-10 h-10 rounded-full border border-gray-700 hover:border-cyan-500 bg-gray-700 text-gray-400 hover:text-cyan-400 flex items-center justify-center transition duration-200 shadow-md",
         copyrightColor: "text-sm text-cyan-600 dark:text-cyan-300",
     },
 
     // YouTube component colors
     youTube: {
-        headingColor: "text-cyan-800 dark:bg-cyan-200",
+        headingColor: "text-cyan-800 dark:bg-cyan-300",
         link: "text-cyan-500 hover:text-yellow-600 transition duration-200 block truncate",
         loadingText: "text-gray-400",
         errorText: "text-red-400 text-sm",
@@ -72,19 +72,19 @@ export const FooterStyles = {
     
     // Quick Links component colors
     quickLinks: {
-        headingColor: "text-cyan-800 dark:bg-cyan-200",
+        headingColor: "text-cyan-800 dark:bg-cyan-300",
     },
     
     // Social Links component colors
     socialLinks: {
-        headingColor: "text-cyan-800 dark:bg-cyan-200",
+        headingColor: "text-cyan-800 dark:bg-cyan-300",
         iconContainer: "w-10 h-10 rounded-full border border-gray-700 hover:border-cyan-500 bg-gray-700 text-gray-400 hover:text-cyan-400 flex items-center justify-center transition duration-200 shadow-md",
         copyrightColor: "text-sm text-cyan-600 dark:text-cyan-300",
     },
 
     // YouTube component colors
     youTube: {
-        headingColor: "text-cyan-800 dark:bg-cyan-200",
+        headingColor: "text-cyan-800 dark:bg-cyan-300",
         link: "text-cyan-500 hover:text-yellow-600 transition duration-200 block truncate",
         loadingText: "text-gray-400",
         errorText: "text-red-400 text-sm",

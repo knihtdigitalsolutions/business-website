@@ -61,12 +61,12 @@ const Footer = ({
   // Helper component for contact links to ensure consistent styling
   const ContactLink = ({ icon, href, text }) => (
     <div className="flex items-start space-x-2">
-      <span className={`${theme.contactIcon} w-6 h-6 flex-shrink-0 mt-0.5`}>
+      <span className={`${theme.contactIcon} w-6 h-6 shrink-0 mt-0.5`}>
         {icon}
       </span>
       <a
         href={href}
-        className={`${theme.text} ${theme.linkHover} transition block break-words`}
+        className={`${theme.text} ${theme.linkHover} transition block wrap-break-word`}
         target={href.startsWith("http") ? "_blank" : "_self"}
         rel="noopener noreferrer"
       >
@@ -110,9 +110,7 @@ const Footer = ({
             />
             {/* Address is not a clickable link but uses the same styling structure */}
             <div className="flex items-start space-x-2">
-              <span
-                className={`${theme.contactIcon} w-6 h-6 flex-shrink-0 mt-0.5`}
-              >
+              <span className={`${theme.contactIcon} w-6 h-6 shrink-0 mt-0.5`}>
                 {SocialSVGMap.mapPin}
               </span>
               <span className={`${theme.text} block`}>
@@ -130,10 +128,7 @@ const Footer = ({
         />
 
         {/* Latest from YouTube Section (Col 3) - PASSING DYNAMIC STYLES */}
-        <YouTube
-          data={data?.mockYoutubeData || []}
-          headingClass={headingClass}
-        />
+        <YouTube data={data?.youtubeData || []} headingClass={headingClass} />
       </div>
 
       {/* Social Links & Copyright (Full Width Bottom Section) */}
