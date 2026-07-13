@@ -109,13 +109,6 @@ export const portfolioContent = [
   },
   {
     icon: FileUser,
-    img: TamiUganda,
-    title: "TAMI Uganda",
-    desc: "A comprehensive educational hub for TAMI Uganda, facilitating access to professional management training and fostering organizational excellence across Africa.",
-    link: "https://tamiuganda.org/",
-  },
-  {
-    icon: FileUser,
     img: GNAssociates,
     title: "GN Associates",
     desc: "A professional digital presence for GN Associates, highlighting their expertise in financial risk management, corporate governance, and strategic advisory services for institutional growth and sustainability.",
