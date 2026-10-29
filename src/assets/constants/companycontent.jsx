@@ -4,25 +4,17 @@ import {
   Lightbulb,
   BrainCircuit,
   Cpu,
-  Globe,
-  MonitorSmartphone,
-  Utensils,
-  HandHeart,
   FileUser,
-  Banknote,
-  Scissors,
 } from "lucide-react";
 import Team from "../media/kniht-team.jpg";
 import Vision from "../media/kniht-vision.jpg";
-import Tami from "../media/tamiuganda.png";
-import GN from "../media/gnassociates.png";
-import Anita from "../media/anita-s-kitchen.png";
-import Marlan from "../media/marlansunisex.png";
+
+import Kniht3dDesign from "../media/kniht3ddesign.png";
+import NuwaPort from "../media/nuwaport.png";
 
 import CandyKProject from "../media/candyk_luxe_cosmetics_ecommerce_project.png";
 import GNAssociates from "../media/gnassociates.png";
 import AnitaKitchen from "../media/anita-s-kitchen.png";
-import TamiUganda from "../media/tami-uganda-project.png";
 import MarlanUnisex from "../media/marlansunisex.png";
 import MigaddeCatholicParish from "../media/migadde-catholic-parish-hero-section.png";
 import KnihtdigitalSolutions from "../media/knihtdigitalsolutions-hero-section.png";
@@ -69,6 +61,20 @@ export const servicesContent = [
     title: "Blockchain",
     description: "Innovative blockchain solutions for modern enterprises.",
     icon: Cpu,
+  },
+];
+export const servicesDemoContent = [
+  {
+    img: NuwaPort,
+    title: "Demo Project",
+    link: "https://nuwabiine-bonaventure.vercel.app",
+    desc: "A showcase of our development expertise.",
+  },
+  {
+    img: Kniht3dDesign,
+    title: "3d Website Design",
+    link: "https://nuwabiine-bonaventure.vercel.app",
+    desc: "Incoporating 3D designs for an immersive user experience.",
   },
 ];
 export const portfolioContent = [

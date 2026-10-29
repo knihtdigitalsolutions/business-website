@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
-import { servicesContent } from "../assets/constants/companycontent";
+import {
+  servicesContent,
+  servicesDemoContent,
+} from "../assets/constants/companycontent";
 
 const Services = ({ isSummary }) => {
   return (
@@ -47,18 +50,7 @@ const Services = ({ isSummary }) => {
         </div>
         {/* Demo Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full">
-          {[
-            {
-              img: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
-              title: "Demo Project",
-              desc: "A showcase of our consultancy and development expertise.",
-            },
-            {
-              img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
-              title: "3d Website Design",
-              desc: "An innovative 3D website created for an immersive user experience.",
-            },
-          ].map((demo, idx) => (
+          {servicesDemoContent.map((demo, idx) => (
             <motion.div
               key={demo.title}
               className="relative group bg-white/10 dark:bg-gray-900/30 rounded-3xl shadow-2xl p-6 flex flex-col items-center border border-cyan-300/30 dark:border-cyan-800/40 backdrop-blur-xl overflow-hidden transition-transform duration-300 hover:scale-[1.04] hover:shadow-cyan-400/40"
@@ -77,9 +69,17 @@ const Services = ({ isSummary }) => {
               <h4 className="text-lg font-bold mb-2 text-gray-900 dark:text-cyan-100 drop-shadow-lg tracking-wide group-hover:text-cyan-500 transition-colors">
                 {demo.title}
               </h4>
-              <p className="text-sm text-center text-cyan-900 dark:text-cyan-100/90 group-hover:text-cyan-500 transition-colors">
+              <p className="mb-2 text-sm text-center text-cyan-900 dark:text-cyan-100/90 group-hover:text-cyan-500 transition-colors">
                 {demo.desc}
               </p>
+              <a
+                href={demo.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-500 hover:text-cyan-400 transition-colors"
+              >
+                View Project
+              </a>
             </motion.div>
           ))}
         </div>
